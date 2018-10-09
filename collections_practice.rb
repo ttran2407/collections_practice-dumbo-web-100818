@@ -43,7 +43,7 @@ sum
 end
 
 def add_s (array)
-new_array = array.select {|word| word != array[1] 
+new_array = array.select {|word| word !== array[1] 
 }
 new_array.map {|word| word += "s"}
 
