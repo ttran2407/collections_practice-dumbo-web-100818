@@ -47,6 +47,8 @@ array.map {|word|
 if word != array[1]
   word += "s"
 end
+
+word
 }
 
 
