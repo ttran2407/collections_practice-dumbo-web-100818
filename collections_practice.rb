@@ -38,12 +38,18 @@ end
 
 def sum_array (array)
 sum = 0
-array.map {|x| sum += x}
+array.each {|x| sum += x}
+sum
 end
 
 def add_s (array)
-new_array = array.selects {|word| !array.size == 1
+array.map {|word|
+if word != array[1]
+  word += "s"
+end
+
+word
 }
-new_array.map {|word| word += "s"}
-binding.pry
+
+
 end
